@@ -34,13 +34,17 @@
                     <th class="text-center">Action</th>
                 </tr>
                 </thead>
-                <tr>
-                    <td>1</td>
-                    <td>News</td>
-                    <td>News Cate</td>
-                    <td>gghhghh</td>
-                    <td>hghg</td>
-                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                <tr ng-repeat="client in clientDetails.detailsArray">
+                    <td>{{client.CustomerTinNumber}}</td>
+                    <td>{{client.CustomerName}}</td>
+                    <td>{{client.CompanyName}}</td>
+                    <td>{{client.City}}</td>
+                    <td>{{client.State}}</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#">
+                        <span class="glyphicon glyphicon-edit"></span> Edit</a>
+                        <a href="#" class="btn btn-danger btn-xs">
+                        <span class="glyphicon glyphicon-remove">
+                        </span> Del</a></td>
 
                 </tr>
                 </table>

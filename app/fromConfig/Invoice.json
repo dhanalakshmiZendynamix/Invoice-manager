@@ -1,0 +1,22 @@
+{
+  "InvoiceDate": {
+    "type": "String",
+    "description": "Enter Invoice Date",
+    "modelValue": ""
+  },
+  "orderedProducts":{
+    "ProductNumber": {
+      "type": "String",
+      "description": "Enter Product Number",
+      "modelValue": ""
+    },
+    "Quantity": {
+      "type": "Number",
+      "description": "Enter Quantity",
+      "modelValue": ""
+    }
+
+
+  }
+
+}
