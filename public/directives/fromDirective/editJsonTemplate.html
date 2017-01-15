@@ -1,0 +1,45 @@
+
+<form   name="userForm"  class="w3-container">
+    <div ng-repeat="formEle in jsonConfig" >
+
+
+        <!--<input type="text" value="{{formEle}}">-->
+
+        {{formEle.description}}
+        <div ng-if="formEle.type==='String'&& !formEle.readonly">
+
+            <input class="w3-input w3-padding-16" placeholder={{formEle.description}} ng-model="formEle.modelValue" type="text"
+                   name="name">
+        </div>
+
+        <div ng-if="formEle.type==='String' && formEle.readonly">
+
+            <input class="w3-input w3-padding-16" placeholder={{formEle.description}} ng-model="formEle.modelValue" type="text"
+                   name="name" readonly>
+        </div>
+
+        <div ng-if="formEle.type==='Number'">
+            <input class="w3-input w3-padding-16" placeholder={{formEle.description}} ng-model="formEle.modelValue" type="text"
+                   name="name"
+                   onkeypress='return (event.charCode >= 48 && event.charCode <= 57)|| event.charCode <= 8 '>
+
+        </div>
+        <div ng-if="formEle.type==='file'">
+
+            <input type="file"  ng-init="formEle.model=''" ng-model="formEle.modelValue"  />
+
+        </div>
+
+
+    </div>
+
+
+
+
+</form>
+
+
+
+
+
+
