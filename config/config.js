@@ -12,7 +12,7 @@ var config = {
     app: {
       name: 'taxiFleetManager'
     },
-    port: 4200,
+    port: 3000,
     db: 'mongodb://localhost/Bill-development',
     settingStatus:{
       simulatorStatus:false
@@ -36,7 +36,7 @@ var config = {
     app: {
       name: 'taxiFleetManager'
     },
-    port: 4200,
+    port: 3000,
     db: 'mongodb://163.172.131.83:28018/taxiFleetManager',
     settingStatus:{
       simulatorStatus:true
