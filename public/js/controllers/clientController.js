@@ -130,6 +130,7 @@ billApp.controller("clientCtrl", function ($scope,clientService,fromService) {
 
      function init(){
          $scope.getClientDetailsByRange(0)
+         $scope.getConfigForClientSaveFrom()
      }
     init()
 })
